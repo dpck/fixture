@@ -2,8 +2,8 @@
   "name": "@depack/fixture",
   "version": "0.0.0",
   "description": "The Fixture For Testing Static Analysis.",
-  "main": "build/index.js",
-  "module": "src/index.js",
+  "main": "src/index.jsx",
+  "module": "build/index.js",
   "scripts": {
     "t": "zoroaster -a",
     "test": "yarn t test/spec test/mask",
@@ -12,7 +12,7 @@
     "test-build": "ALAMODE_ENV=test-build yarn test",
     "lint": "eslint .",
     "doc": "NODE_DEBUG=doc doc documentary -o README.md",
-    "b": "alamode src -o build -s",
+    "b": "alamode src -o build -s -j -p",
     "d": "yarn-s d1",
     "d1": "NODE_DEBUG=doc doc src/index.js -g",
     "build": "yarn-s d b doc",
@@ -39,10 +39,13 @@
   },
   "homepage": "https://github.com/dpck/fixture#readme",
   "devDependencies": {
-    "alamode": "1.7.3",
+    "alamode": "1.8.0",
     "documentary": "1.21.1",
     "eslint-config-artdeco": "1.0.1",
     "yarn-s": "1.1.0",
     "zoroaster": "3.6.6"
+  },
+  "dependencies": {
+    "@idio/preact-fixture": "1.0.0"
   }
 }

@@ -1,12 +1,11 @@
-import { h } from 'preact'
 import { render } from 'preact'
 import { Test } from '@idio/preact-fixture'
 import Component from './Component'
 
 const Fixture = () => {
-  return (       h(Component,{},
-    h(Test),
-  ))
+  return (<Component>
+    <Test />
+  </Component>)
 }
 
 export default Fixture
