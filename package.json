@@ -42,6 +42,7 @@
     "alamode": "1.8.0",
     "documentary": "1.21.1",
     "eslint-config-artdeco": "1.0.1",
+    "static-analysis": "1.0.0",
     "yarn-s": "1.1.0",
     "zoroaster": "3.6.6"
   },

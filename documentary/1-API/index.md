@@ -1,25 +1,27 @@
 ## API
 
-The package is available by importing its default function:
+The package is available by importing its default and named functions:
 
 ```js
-import fixture from '@depack/fixture'
+import fixture, { Component3 } from '@depack/fixture'
 ```
 
 %~%
 
-```## fixture
-[
-  ["arg1", "string"],
-  ["arg2?", "boolean"]
-]
-```
+## The Structure
 
-Call this function to get the result you want.
+%TREE src%
 
-%TYPEDEF types/index.xml%
+%~%
 
-%EXAMPLE: example/example.js, ../src => @depack/fixture%
-%FORK example example/example%
+## `index.jsx`
+
+%EXAMPLE: src/index.jsx, javascript%
+
+%~%
+
+## Static Analysis
+
+%FORK-js example example/example%
 
 %~%

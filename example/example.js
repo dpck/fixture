@@ -1,9 +1,7 @@
 /* yarn example/ */
-import fixture from '../src'
+import staticAnalysis from 'static-analysis'
 
 (async () => {
-  const res = await fixture({
-    text: 'example',
-  })
+  const res = await staticAnalysis('src/index.jsx')
   console.log(res)
 })()
